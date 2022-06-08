@@ -6,10 +6,13 @@ import com.homesource.bookmy.persistence.entity.ProductoFactura;
 import com.homesource.bookmy.persistence.mapper.CartItemMapper;
 import com.homesource.bookmy.persistence.repository.jpa.ProductoFacturaJpaRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-@AllArgsConstructor
+@Transactional
+@RequiredArgsConstructor
 public class ProductoFacturaRepository implements CartItemRepository {
 
     private final ProductoFacturaJpaRepository productoFacturaJpaRepository;

@@ -3,6 +3,7 @@ package com.homesource.bookmy.domain.dto;
 import com.homesource.bookmy.domain.enumeration.ProductType;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
@@ -12,4 +13,5 @@ public class CartItemDto {
     private LocalDateTime addedAt;
     private String type;
     private BookDto book;
+    private Long cartId;
 }

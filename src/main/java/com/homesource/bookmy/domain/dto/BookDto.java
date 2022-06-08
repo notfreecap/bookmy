@@ -1,14 +1,11 @@
 package com.homesource.bookmy.domain.dto;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Data
-@Builder
+@AllArgsConstructor @NoArgsConstructor @Builder
 public class BookDto {
 
     private Long bookId;

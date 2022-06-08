@@ -46,6 +46,23 @@ insert into libro(
          'CREADO',
          1
         );
+/*insert into libro(
+    nombre,
+    autor,
+    fecha_lanzamiento,
+    paginas,
+    fecha_creacion,
+    estado,
+    LIBRO_STOCK_ID
+)(
+    'To Kill a Mockingbird',
+    'Harper Lee',
+    CURRENT_TIMESTAMP(),
+    245,
+    CURRENT_TIMESTAMP(),
+    'CREADO',
+    1
+);*/
 
 insert into factura(
     fecha_creacion,

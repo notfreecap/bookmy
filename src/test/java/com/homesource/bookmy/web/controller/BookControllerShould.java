@@ -17,9 +17,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class BookControllerShould {
 
     @Autowired
-    BookController bookController = new BookController();
+    private BookController bookController;
 
-    BookDto mockBookDto;
+    private BookDto mockBookDto;
 
     @BeforeEach
     void setUp() {

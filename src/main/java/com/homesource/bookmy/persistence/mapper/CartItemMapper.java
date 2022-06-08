@@ -14,7 +14,8 @@ public interface CartItemMapper {
             @Mapping(source = "id", target = "itemId"),
             @Mapping(source = "fechaCreacion", target = "addedAt"),
             @Mapping(source = "tipoServicio", target = "type"),
-            @Mapping(source = "libro", target = "book")
+            @Mapping(source = "libro", target = "book"),
+            @Mapping(source = "facturaId", target = "cartId")
     })
     CartItemDto toCartItem(ProductoFactura productoFactura);
     List<CartItemDto> toCartItemList(List<ProductoFactura> productoFactura);
